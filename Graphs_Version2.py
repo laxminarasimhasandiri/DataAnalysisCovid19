@@ -3,7 +3,7 @@
 """
 Created on Tue Nov  7 15:58:26 2023
 
-@author: ravi
+@author:Dheeru
 """
 # Import necessary libraries
 
@@ -124,9 +124,9 @@ plt.show()
 
 #########################Scenario-5#########################
 
-## Canada line chart
+## USA line chart
 
-country = 'Canada'
+country = 'USA'
 country_data = covid_full_grouped[covid_full_grouped['Country/Region'] == country]
 
 country_data['Date'] = pd.to_datetime(country_data['Date'])
@@ -141,9 +141,9 @@ sns.lineplot(x='Date', y=country_data['Active'], data=covid_full_grouped, color=
 sns.lineplot(x='Date', y=country_data['Recovered'], data=covid_full_grouped, color='black', label='Recovered')
 
 # Adding labels and title
-plt.title('COVID 19 in  Canada')
+plt.title('COVID 19 in  USA')
 plt.xlabel('Time')
-plt.ylabel('No of Covid 19 cases in Canada')
+plt.ylabel('No of Covid 19 cases in USA')
 
 plt.show()
 
